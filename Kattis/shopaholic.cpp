@@ -18,13 +18,5 @@ int main() {
     for (int i = 2; i < n; i+=3) {
         cost += arr[i];
     }
-    if (arr.size() % 3 != 0) {
-        int offset = arr.size() % 3;
-        auto iter = arr.begin() + n - offset;
-        while (iter != arr.end()) {
-            cost += *iter;
-            iter++;
-        }
-    }
     cout << cost << endl;
 }
